@@ -2,6 +2,10 @@
 using namespace std;
 
 void funkcjaA(int x) {
+	// 1 & liczba parzysta zwraca 0
+	// 1 & liczba nie parzysta zwraca 1
+	// 1 & 11 zwraca 1
+	// 1 & 10 zwraca 0
         if(x & 1) cout <<"Liczba nieparzysta."<< endl;
         else cout <<"Liczba parzysta."<< endl;
 }
