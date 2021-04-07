@@ -1,10 +1,3 @@
-/**
- * \author: Arkadiusz Bubak arkadiusz@bubak.pl
- * \date 2019.04.23
- * \brief Instrukcja if w C++
- * v0.01
- */
-
 #include <iostream>
 using namespace std;
 
