@@ -4,6 +4,7 @@ using namespace std;
 
 
 int main() {
+	// wypisywanie na ekran
 	cout << "cout output"<< endl;
 	// ./a.out 2>error.txt - zapisanie błedu do pliku
 	cerr << "Strumień błędów"<< endl;
