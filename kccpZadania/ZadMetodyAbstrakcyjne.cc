@@ -109,6 +109,13 @@ class Kolo : public Figura{
    void Pole(){
 	cout << "Pole kola wynosi: "<< M_PI*(this->r*this->r) << endl;
    }
+   void Dystans(float x){
+	float r = 1;
+	while ((M_PI*(r*r)) < x){
+		cout << "r = " << r << ", M_PI*(r*r) = " << M_PI*(r*r) << endl;
+		r+=0.1;
+	}
+   }
 };
 
 
@@ -134,6 +141,7 @@ int main()
    objKolo->Narysuj();
    objKolo->Obwod();
    objKolo->Pole();
+   objKolo->Dystans(10);
 
    //Figura fig;    //ERROR
    //Figura *fig = new Figura();    //ERROR
