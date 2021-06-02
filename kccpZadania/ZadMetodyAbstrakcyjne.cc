@@ -12,7 +12,7 @@ using namespace std;
 
 //------------------------------------------------------------------
 class Figura
-{   
+{
  public:
    virtual void Narysuj() = 0;
    virtual void Obwod() = 0;
@@ -24,7 +24,7 @@ class Figura
 
 
 //------------------------------------------------------------------
-class Trojkat : public Figura 
+class Trojkat : public Figura
 {
  private:
 	float a;
@@ -40,7 +40,7 @@ class Trojkat : public Figura
       cout << "Przepis na narysowanie trojkata" << endl;
    }
    void Obwod(){
-	cout << "Obwod trojkota wynosi: "<< a+b+c << endl;
+	cout << "Obwod trojkota wynosi: "<< this->a+this->b+this->c << endl;
    }
    void Pole(){
 	float p = (this->a+this->b+this->c) / 2;
@@ -49,7 +49,7 @@ class Trojkat : public Figura
 };
 
 //------------------------------------------------------------------
-class Kwadrat : public Figura 
+class Kwadrat : public Figura
 {
  private:
 	int a;
@@ -61,10 +61,10 @@ class Kwadrat : public Figura
       cout << "Przepis na narysowanie kwadrata" << endl;
    }
    void Obwod(){
-	cout << "Obwod kwadratu wynosi: "<< 4*a << endl;
+	cout << "Obwod kwadratu wynosi: "<< 4*this->a << endl;
    }
    void Pole(){
-	cout << "Pole kwadratu wynosi: "<< a*a << endl;
+	cout << "Pole kwadratu wynosi: "<< this->a*this->a << endl;
 }
 };
 
